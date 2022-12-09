@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+	<PropertyGroup>
+		<Authors>Philip Hendry</Authors>
+		<Company>LlamaDash</Company>
+		<Copyright>Copyright � $(Company) $([System.DateTime]::Now.Year)</Copyright>
+		<PackageIcon>Logo.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)LocalNugets</PackageOutputPath>
+		<RestoreAdditionalProjectSources>(MSBuildThisFileDirectory)LocalNugets</RestoreAdditionalProjectSources>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="$(MSBuildThisFileDirectory)Logo.png" Pack="true" PackagePath="" />
+		<None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>

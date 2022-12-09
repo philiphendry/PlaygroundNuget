@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+	<!-- See https://learn.microsoft.com/en-us/nuget/consume-packages/central-package-management#enabling-central-package-management -->
+
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageVersion Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageVersion Include="LlamaDash.NugetLibrary" Version="1.0.0" />
+	</ItemGroup>
+
+</Project>
