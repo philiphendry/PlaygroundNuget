@@ -12,7 +12,10 @@
   <ItemGroup>
     <!-- This doesn't specify a version number but instead will adopt the version from Directory.Package.props -->
 	  <PackageReference Include="Newtonsoft.Json" />
-    <PackageReference Include="LlamaDash.NugetLibrary" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NugetLibrary\LlamaDash.NugetLibrary.csproj" />
   </ItemGroup>
 
 </Project>

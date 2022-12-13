@@ -13,4 +13,13 @@
 		<Version>1.0.0</Version>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <None Update="contentFiles\any\any\ReadMe.md">
+			<Pack>true</Pack>
+			<PackageCopyToOutput>false</PackageCopyToOutput>
+			<PackagePath>testing\</PackagePath>
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>
